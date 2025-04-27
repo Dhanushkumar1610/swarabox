@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swara Box - Your Favourite Music</title>
+    <link rel="stylesheet" href="contentfile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="swara box.jpg" alt="Swara Box Logo"> Swara Box</li>
+            <li><a href="intro.html">Home</a></li>
+            <li><a href="privacy-policy.html">About</a></li>
+        </ul>
+    </nav>
+            <!-- Random song will appear here -->
+        </div>      
+    <div class="container">
+        <div class="songList"> 
+            <h1>Our Contents </h1>
+            <div style="border: 1px solid black; padding: 10px;">
+                <div style="float: centre;"> <div class="recommendation">
+                    <h2>Your Music Recommendation</h2>
+                    <button id="recommendButton">Get Another Recommendation</button>
+                <div id="recommendation">
+                    <!-- Random song will appear here -->
+                </div></div>
+            <div class="searchBar">
+                <input type="text" id="searchInput" placeholder="Search songs...">
+            </div>
+            <div class="songItemContainer" id="songListContainer">
+                <!-- Songs will be dynamically inserted here -->
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="songInfo"> 
+            </div>      
+            <span id="masterSongName">Select a Song</span>
+            <div class="icons">
+                <i class="fas fa-step-backward" id="previous"></i>
+                <i class="far fa-play-circle" id="masterPlay"></i>
+                <i class="fas fa-step-forward" id="next"></i>
+            </div>
+            <input type="range" id="volumeControl" min="0" max="100" value="50">
+        </div>
+    </div>
+
+    <script src="contentfile.js"></script>
+</body>
+</html>
